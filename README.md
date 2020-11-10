@@ -1,6 +1,6 @@
 # Maven Dependencies Analyser Examples
 
-This project demonstrates how you can use [Maven Dependencies Analyser] (https://github.com/aistomin/maven-dependencies-analyser)
+This project demonstrates how you can use [Maven Dependencies Analyser](https://github.com/aistomin/maven-dependencies-analyser)
 library. 
 
 If you clone the repository and run ```mvn clean install package```

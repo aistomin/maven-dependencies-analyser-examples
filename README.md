@@ -6,7 +6,7 @@ library.
 If you clone the repository and run ```mvn clean install package```
 in the project's folder, the build will fail with the error like:
 ```
-[ERROR] Failed to execute goal com.github.aistomin:maven-dependencies-analyser:0.1:check (default) on project maven-dependencies-analyser-examples: com.github.aistomin:maven-browser (version 1.2) has newer versions: 1.4; 1.3 -> [Help 1]
+[ERROR] Failed to execute goal com.github.aistomin:maven-dependencies-analyser:0.1.1:check (default) on project maven-dependencies-analyser-examples: com.github.aistomin:maven-browser (version 1.2) has newer versions: 1.4; 1.3 -> [Help 1]
 ```
 It fails because the analyser detects the out-dated library ```maven-browser```.
 
@@ -15,7 +15,7 @@ The configuration responsible for this validation is in the ```pom.xml```:
 <plugin>
     <groupId>com.github.aistomin</groupId>
     <artifactId>maven-dependencies-analyser</artifactId>
-    <version>0.1</version>
+    <version>0.1.1</version>
     <configuration>
         <level>ERROR</level>
     </configuration>

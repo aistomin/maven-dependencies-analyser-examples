@@ -15,7 +15,7 @@ The configuration responsible for this validation is in the ```pom.xml```:
 <plugin>
     <groupId>com.github.aistomin</groupId>
     <artifactId>maven-dependencies-analyser</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <configuration>
         <level>ERROR</level>
     </configuration>
@@ -35,4 +35,12 @@ If you like to make this configuration less extreme and only show the
  again and the build will be successful. In the build output you'll see the warning:
 ```
 [WARNING] com.github.aistomin:maven-browser (version 1.2) has newer versions: 1.4; 1.3
+```
+You may also consider to completely disable the validation by adding new configuration
+```<enabled>false</enabled>```. In this case the plugin will be switched off completely
+and you will see the warning in the logs:
+```
+[WARNING] ***********************************************
+[WARNING] Maven dependencies analysis is switched off.
+[WARNING] ***********************************************
 ```

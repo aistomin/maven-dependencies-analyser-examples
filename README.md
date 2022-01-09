@@ -15,7 +15,7 @@ The configuration responsible for this validation is in the ```pom.xml```:
 <plugin>
     <groupId>com.github.aistomin</groupId>
     <artifactId>maven-dependencies-analyser</artifactId>
-    <version>0.1.2</version>
+    <version>0.2</version>
     <configuration>
         <level>ERROR</level>
     </configuration>
